@@ -1,0 +1,108 @@
+.game-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 4px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-section h3 {
+  color: var(--kavia-orange);
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 5px;
+}
+
+.next-piece-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 4px;
+  min-height: 100px;
+}
+
+.next-tetromino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-row {
+  display: flex;
+}
+
+.preview-cell {
+  border-radius: 2px;
+  margin: 1px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.info-value {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+  min-width: 40px;
+  text-align: right;
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-button {
+  background-color: var(--kavia-orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.game-button:hover {
+  background-color: #FF8B4D;
+}
+
+@media (max-width: 768px) {
+  .game-info {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .info-section {
+    width: 45%;
+  }
+  
+  .buttons-section {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
