@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import TetrisContainer from './components/TetrisContainer';
 
 function App() {
   return (
@@ -8,9 +9,8 @@ function App() {
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+              <span className="logo-symbol">*</span> Classic Tetris
             </div>
-            <button className="btn">Template Button</button>
           </div>
         </div>
       </nav>
@@ -18,16 +18,14 @@ function App() {
       <main>
         <div className="container">
           <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">main_container_for_classic_tetris_stack</h1>
-            
+            <h1 className="title">Classic Tetris</h1>
             <div className="description">
-              Start building your application.
+              A classic Tetris game with traditional block-stacking gameplay. Use arrow keys to move and rotate pieces!
             </div>
-            
-            <button className="btn btn-large">Button</button>
           </div>
+          
+          {/* Main Tetris Container */}
+          <TetrisContainer />
         </div>
       </main>
     </div>
